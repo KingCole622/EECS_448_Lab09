@@ -1,0 +1,27 @@
+body {
+background-color: white;
+}
+
+#table {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  grid-template-columns: repeat(101, 40px);
+  grid-template-rows: repeat(101,40px);
+  text-align: center;
+}
+
+#grid-box {
+  background-color: lightgrey;
+  border: 1px solid black;
+}
+
+#base-box {
+  background-color: lightgreen;
+  border: 1px solid black;
+}
+
+h1 {
+margin-left: 40px;
+}
