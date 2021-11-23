@@ -1,0 +1,96 @@
+body {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    height: 2200px;
+}
+
+#text-input-box {
+    width: 10vw;
+}
+
+.cartCO {
+    position: absolute;
+    top: 1000px;
+    left: 32.5vw;
+    width: 35vw;
+    height: auto;
+    background-color: hotpink;
+    font-family: Consolas, 'Courier New', monospace;
+}
+
+#store-title {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 100vw;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-box {
+    margin-top: 2vh;
+    text-align: center;
+}
+
+#cartContainer {
+    position: absolute;
+    font-size: 30px;
+    top: 30px;
+    right: 10vw;
+    text-decoration: none;
+    color: black;
+}
+
+#text-title-box {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#vacuum-img {
+    height: 40vh;
+    width: 18vw;
+}
+
+#container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 40vh;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#item-box {
+    background-color: black;
+    width: 18vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#container2 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+    height: 40vh;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inputBox {
+    position: absolute;
+    top: 1400px;
+    margin-left: 35vw;
+    background-color: grey;
+    width: 30vw;
+    height: auto;
+    text-align: center;
+}
