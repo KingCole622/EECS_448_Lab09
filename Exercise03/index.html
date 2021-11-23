@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<?php include 'customerBackend .php';?>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="formCheck.js"></script>
+<h1 id="store-title"><div id="text-title-box">Cole's Vacuum Store</div></h1><br><br><br><br><br><br>
+
+<body>
+    <form action="customerBackend.php" method="post">
+    <div id="container">
+        <div id="item-box">
+            <img src="BISSELL.jpeg" id="vacuum-img" class="BissellPowerforce" onclick="cole()">
+            <div id="text-box">BISSELL PowerForce Helix Bagless Upright Vacuum $59.99</div>
+            <input type="number" name="BPF" id="text-input-box" min="0" placeholder="0" value=0 onchange="updateCart(value, 'BPF')">
+        </div>
+        <div id="item-box">
+            <img src="dirt_devil.jpeg" id="vacuum-img" class="DirtDevil">
+            <div id="text-box">Dirt Devil Power Express Upright Bagless Vacuum $39.99</div>
+            <input type="number" name="DD" id="text-input-box" min="0" placeholder="0" value=0 onchange="updateCart(value, 'DD')">
+        </div>
+        <div id="item-box">
+            <img src="BIS3-1.jpeg" id="vacuum-img" class="Bissell3-in-1">
+            <div id="text-box">BISSELL 3-in-1 Lightweight Corded Stick Vacuum $23.99</div>
+            <input type="number" name="B31" id="text-input-box" min="0" placeholder="0" value=0 onchange="updateCart(value, 'B31')">
+        </div>
+    </div>
+    <div id="container2">
+        <div id="item-box">
+            <img src="shark.jpeg" id="vacuum-img" class="Shark">
+            <div id="text-box">Shark Pro Swivel Pet Upright Vacuum with Self-cleaning Brushroll $99.99</div>
+            <input type="number" name="shark" id="text-input-box" min="0" placeholder="0" value=0 onchange="updateCart(value, 'shark')">
+        </div>
+        <div id="item-box">
+            <img src="eureka.png" id="vacuum-img" class="Eureka">
+            <div id="text-box">Eureka FloorRover Dash Upright Vacuum $109.99</div>
+            <input type="number" name="eureka" id="text-input-box" min="0" placeholder="0" value=0 onchange="updateCart(value, 'eureka')">
+        </div>
+        <div id="item-box">
+            <img src="windtunnel.jpeg" id="vacuum-img" class="WindTunnel">
+            <div id="text-box">Hoover WindTunnel XL Pet Bagless Upright Vacuum $69.99</div>
+            <input type="number" name="hoover" id="text-input-box" min="0" placeholder="0" value=0 onchange="updateCart(value, 'hoov')">
+        </div>
+    </div><br><br><br><br><br><br><br><br><br>
+    <div class="cartCO">
+        <h1 style="text-align: center;">Cart</h1>
+        <div style="margin-left: 10px;">
+        <p id="1">Bissell PowerForce ------------------------ 0x</p>
+        <p id="2">Dirt Devil -------------------------------- 0x</p>
+        <p id="3">Bissell 3-in-1 ---------------------------- 0x</p>
+        <p id="4">Shark Pro Swivel -------------------------- 0x</p>
+        <p id="5">Eureka FloorRover ------------------------- 0x</p>
+        <p id="6">Hoover WindTunnel ------------------------- 0x</p>
+        <p id="ship">
+            Shipping<br>
+            <label for="7-day"><input id="7-day" type="radio" name="shipping" value=0 onclick="shipping(value)" checked>7 day -- Free</label><br>
+            <label for="3-day"><input id="3-day" type="radio" name="shipping" value=5 onclick="shipping(value)">3 day -- $5.00</label><br>
+            <label for="overNight"><input id="overNight" type="radio" name="shipping" value=50 onclick="shipping(value)">Over Night -- $50.00</label><br></p>
+        </div>
+    </div>
+    <div id="inputBox">
+        Email:<input type="email" required><br>
+        Password:<input type="password" name="pass" required><br>
+        <input type="submit">
+    </div>
+    <!--Shipping option-->
+</form>
+</body>
+</html>
